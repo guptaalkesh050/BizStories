@@ -22,7 +22,7 @@ background-color:black;
         0 0 25px rgba(0,0,0,.4);
 
 }
-.header::before {
+/*.header::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -32,7 +32,7 @@ background-color:black;
     transform: scale(1.1);      
     filter:blur(5px);
     z-index: -1;
-}
+}*/
 .Biz {
     color: red;
     font-family: Tiempos;
