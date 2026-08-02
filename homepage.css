@@ -1,0 +1,62 @@
+.background {
+    background-color: black;
+}
+.logo{
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.logo .red {
+    color: red;
+}
+.headline {
+    top: 80px;
+    left: 60px;
+    width: 1250px;
+    height: 500px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.headline::before {
+     content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("NVIDIA_Unterseite_Big.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(6px);
+    transform: scale(1.08);
+    z-index: 1;
+    font-family: Arial, sans-serif;
+}
+    
+
+.headline h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.headline p {
+    font-size: 20px;
+    margin: 0;
+}
+.headline h1,
+.headline p {
+    position: relative;   
+    z-index: 2;           
+    color: white;
+    text-align: center;
+}
+
+.text {
+    position: absolute;
+    top: 125px;
+}
+
+.text a {
+    text-decoration: none;
+    color: inherit;
+}
