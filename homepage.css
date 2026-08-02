@@ -1,7 +1,7 @@
 .background {
     background-color: black;
 }
-.logo{
+.logo {
     color: white;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -14,13 +14,14 @@
     left: 60px;
     width: 1250px;
     height: 500px;
-    position: absolute;
+    position: relative; /* use relative so pseudo-element is positioned inside */
     border-radius: 10px;
+    overflow: hidden; /* contain the blurred background */
 }
 
 
 .headline::before {
-     content: "";
+    content: "";
     position: absolute;
     inset: 0;
     background-image: url('NVIDIA_Unterseite_Big.webp');
@@ -30,7 +31,7 @@
     filter: blur(6px);
     transform: scale(1.08);
     z-index: 1;
-    font-family: Arial, sans-serif;
+    pointer-events: none; /* allow clicks through the pseudo-element */
 }
     
 
@@ -55,6 +56,9 @@
 .text {
     position: absolute;
     top: 125px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .text a {
