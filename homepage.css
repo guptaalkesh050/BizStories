@@ -44,6 +44,8 @@
 .headline p {
     font-size: 20px;
     margin: 0;
+    overflow: hidden;
+
 }
 .headline h1,
 .headline p {
