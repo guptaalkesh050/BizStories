@@ -5,14 +5,15 @@
     color: white;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(20px, 4vw, 36px);
+    margin-bottom: 20px;
 }
 .logo .red {
     color: red;
 }
 .headline {
     top: 80px;
-    left: 60px;
-    width: 1250px;
+    width: min (1340px);
     height: 470px;
     position: relative; /* use relative so pseudo-element is positioned inside */
     border-radius: 10px;
@@ -67,14 +68,35 @@
     text-decoration: none;
     color: inherit;
 }
-
-.ads {
-    top: 100px;
+.submain {
+top: 100px;
     left: 60px;
     width: 1250px;
-    height: 200px;
+    height: 470px;
     position: relative; /* use relative so pseudo-element is positioned inside */
     border-radius: 10px;
-    overflow: hidden;
+    overflow: hidden; 
     background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .headline,
+    .submain {
+        width: 95%;           /* Gives slightly more horizontal room on smaller screens */
+        min-height: 320px;     /* Reduces vertical height on smaller viewports */
+        margin: 1rem auto;
+    }
+
+    .text {
+        padding: 1.25rem 1rem;
+    }
+}
+
+/* Ultra-Small Mobile (Under 400px) */
+@media screen and (max-width: 400px) {
+    .headline,
+    .submain {
+        border-radius: 6px;   /* Smaller rounded edges for tiny displays */
+        min-height: 280px;
+    }
 }
