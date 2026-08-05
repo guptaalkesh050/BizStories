@@ -16,7 +16,7 @@
     width: min (1340px);
     height: 470px;
     position: relative; /* use relative so pseudo-element is positioned inside */
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden; /* contain the blurred background */
 }
 
